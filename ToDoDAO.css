@@ -1,0 +1,49 @@
+body{
+    text-align: center;
+}
+p{
+    color: rgb(102, 101, 101);
+    margin: 0px;
+}
+input{
+    height: 30px;
+    color: rgb(102, 101, 101);
+}
+.line{
+    margin: 10px 0px 20px 0px;
+}
+.o{
+    margin: 5px;
+    vertical-align: middle;
+}
+#what{
+    width: 100%;
+}
+.container{
+    padding: 0% 30%;
+    text-align: initial;
+}
+.footer{
+    padding: 2% 30%;
+    display: flex;
+    justify-content: flex-start;
+}
+.before-item{
+    border: 1px solid darkgray;
+    text-align: center;
+    width: 70px;
+    height: 15px;
+    margin: 10px 30% 0px 0px;
+    padding: 10px;
+    font-size: 13px;
+}
+.item{
+    background-color: rgb(128, 222, 235);
+    text-align: center;
+    width: 70px;
+    height: 15px;
+    margin: 10px 5px;
+    padding: 10px;
+    font-size: 13px;
+    color: white;
+}

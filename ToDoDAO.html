@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="to-do-list" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" type="text/css" href="./ToDoDAO.css"/>
+</head>
+<body>
+    <h1>할일 등록</h1>
+    <div class="container">
+      <p>어떤일인가요?</p>
+      <input id="what" class="line" type="text" name="ToDo" value="(24글자까지)" required=true>
+      <p>누가 할일인가요?</p>
+      <input class="line" type="text" name="Who" value="홍길동" required=true>
+      <p>우선순위를 선택하세요</p>
+      <input class="o" type="radio" name="checkOrder" id="1순위" required=true>1순위
+      <input class="o" type="radio" name="checkOrder" id="2순위" required=true>2순위
+      <input class="o" type="radio" name="checkOrder" id="3순위" required=true>3순위
+    </div>
+</body>
+<div class="footer">
+    <div class="before-item"><a href="main.html">&lt; 이전</a></div>
+    <div class="item">제출</div>
+    <div class="item">내용지우기</div>
+</div>  
+</html>
