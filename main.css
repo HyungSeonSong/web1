@@ -19,20 +19,32 @@ a{
     color: white;
     width: 100px;
     height: 10px;
-    margin: 10px 5px;
+    margin: 10px 2% 5px;
     padding: 10px;
     font-size: 11px;
 }
-.head-container{
+.card-row{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
 }
-.head-item{
+.card-col{
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+}
+.head-card{
     background-color: rgb(31, 83, 126);
     color: white;
-    width: 200px;
+    width: 85%;
     height: 30px;
-    margin: 10px 5px;
+    margin: 5px 5%;
+    padding: 10px;
+}
+.card{
+    background-color: green;
+    color: white;
+    width: 85%;
+    height: 40px;
+    margin: 5px 5%;
     padding: 10px;
 }

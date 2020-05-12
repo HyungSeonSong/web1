@@ -7,20 +7,38 @@
 </head>
 <body>
     <h1>할일 등록</h1>
-    <div class="container">
-      <p>어떤일인가요?</p>
-      <input id="what" class="line" type="text" name="ToDo" value="(24글자까지)" required=true>
-      <p>누가 할일인가요?</p>
-      <input class="line" type="text" name="Who" value="홍길동" required=true>
-      <p>우선순위를 선택하세요</p>
-      <input class="o" type="radio" name="checkOrder" id="1순위" required=true>1순위
-      <input class="o" type="radio" name="checkOrder" id="2순위" required=true>2순위
-      <input class="o" type="radio" name="checkOrder" id="3순위" required=true>3순위
-    </div>
+      <div class="container">
+        <p>어떤일인가요?</p>
+        <input id="what" class="line" type="text" name="ToDo" placeholder="(24글자까지)" required=true>
+        <p>누가 할일인가요?</p>
+        <input class="line" type="text" name="Who" placeholder="홍길동" required=true>
+        <p>우선순위를 선택하세요</p>
+        <input class="o" type="radio" name="checkOrder" id="1순위" required=true>1순위
+        <input class="o" type="radio" name="checkOrder" id="2순위" required=true>2순위
+        <input class="o" type="radio" name="checkOrder" id="3순위" required=true>3순위
+      </div>
 </body>
 <div class="footer">
     <div class="before-item"><a href="main.html">&lt; 이전</a></div>
-    <div class="item">제출</div>
-    <div class="item">내용지우기</div>
-</div>  
+    <div id="submit" class="item">제출</div>
+    <div id="init" class="item">내용지우기</div>
+</div>
+<script type="text/javascript">
+    const clearForm = () => {
+        console.log("wow");
+        const inputlist = document.querySelectorAll("input");
+        for(let e of inputlist){
+          switch(e.type){
+              case "text":
+                    e.value = "";
+                    break;
+              case "radio":
+                    e.checked = false;
+                    break;
+          }
+      }
+    }
+    document.getElementById("init").addEventListener("click", clearForm, false);
+    // document.getElementById("submit").addEventListener("click", clearForm, false);
+  </script>
 </html>

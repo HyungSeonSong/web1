@@ -11,13 +11,31 @@
     <div class="register-container">
       <div class="register-item"><a href="ToDoDAO.html">새로운 TODO 등록</a></div>
     </div>
-    <div class="head-container">  
-      <div class="head-item">TODO</div>
-      <div class="head-item">DOING</div>
-      <div class="head-item">DONE</div>
+    <div class="card-row">  
+      <div class="card-col">
+        <div class="head-card" id="TODO">TODO</div>
+      </div>
+      <div class="card-col">
+        <div class="head-card" id="DOING">DOING</div>
+      </div>
+      <div class="card-col">
+        <div class="head-card" id="DONE">DONE</div>
+      </div>
     </div>
-    <main>
-
-    </main>
+    <script type="text/javascript">
+       const todo = document.getElementById("TODO");
+       const doing = document.getElementById("DOING");
+       const moveCard = (e) => {
+         const idValue = e.getAttribute('id');
+           switch(idValue){
+              case "TODO":
+                break;
+              case "DOING":
+                break; 
+           }
+        todo.addEventListener("click", moveCard, false);
+        doing.addEventListener("click", moveCard, false);
+       }
+    </script>
 </body>
 </html>
